@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: flex;
+            gap: 20px;
+            overflow-x: scroll;
+            width: 300px;
+        }
+        .card {
+            box-sizing: border-box;
+            padding: 20px 30px;
+            flex-shrink: 0;
+            width: 300px;
+            background-color: white;
+            border-radius: 14px;
+            text-align: center;
+        }
+        .card img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 50px;
+        }
+        .wrapper::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <img src="assets/mg1" alt="model 1">
+        </div>
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique, enim in suscipit ultricies, ligula urna viverra nunc, non commodo neque nisi eu neque. Integer non consectetur neque. Donec id turpis id eros posuere finibus vel sit amet velit.</p>
+        </div>
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique, enim in suscipit ultricies, ligula urna viverra nunc, non commodo neque nisi eu neque. Integer non consectetur neque. Donec id turpis id eros posuere finibus vel sit amet velit.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMKM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #66A5AD;
+        }
+
+        .navbar {
+            border-bottom: 5px solid black;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            height: 60vh;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .steps img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .steps .step {
+            text-align: center;
+        }
+
+        .steps .step h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .rounded-btn {
+            color: black;
+            background-color: #BEBEBE;
+            border-radius: 10px;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .rounded-btn:hover {
+            text-decoration: none;
+            color: white;
+            background-color: #A9A9A9;
+        }
+
+        .form-container {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #487F86;">
+        <a href="#" class="navbar-brand text-decoration-none text-start" style="color: white;">Mustika Hijab</a>
+        <ul class="navbar-nav ms-auto fw-bold">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="umkm">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="umkm(about)">About</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container rounded-5 mt-3">
+        <div class="hero row mt-6 justify-content-center" style="background-color: #D9D9D9;">
+            <div class="col-md-6 d-flex align-items-center">
+                <div>
+                    <h1>Mustika Hijab</h1>
+                    <p class="lead">Mustika Hijab adalah tempat beli Hijab terpercaya di daerah Ngaliyan Semarang. Kecamatan Ngaliyan, Kelurahan Kalipancur. Perusahaan ini didirikan seorang diri, cara ia berjualan bisa melalui online dan secara langsung</p>
+                    <p>Untuk online hanya melayani melalui instagram <i class="bi bi-instagram"></i>, untuk instagramnya sendiri bernama <a href="https://www.instagram.com/mustikahijab.21">@mustikahijab.21</a></p>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="assets/logo" alt="Nature Image" class="img-fluid">
+            </div>
+            <div class="border border-3 border-dark rounded">
+                <p>Apakah produknya</p>
+                <p>Apakah kalo dipake bikin gatel?</p>
+                <p>Apakah kainnya lembut?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="form-container" style="background-color:#D9D9D9">
+            <form class="fw-bold">
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" class="form-control" id="nama" placeholder="Nama" style="background-color: #BEBEBE;">
+                </div>
+                <div class="mb-3">
+                    <label for="kritik" class="form-label">Kritik</label>
+                    <textarea class="form-control" id="kritik" rows="3" placeholder="Kritik" style="background-color: #BEBEBE;"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="saran" class="form-label">Saran</label>
+                    <textarea class="form-control" id="saran" rows="3" placeholder="Saran" style="background-color: #BEBEBE;"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="pesan" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="pesan" rows="3" placeholder="Pesan" style="background-color: #BEBEBE;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
