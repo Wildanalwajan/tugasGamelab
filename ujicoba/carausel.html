@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        .container {
+        text-align: center;
+        }
+
+        .hero {
+        background-color: grey;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        }
+
+        #hero-text {
+        color: white;
+        font-size: 2em;
+        }
+
+        .thumbnail-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        }
+
+        .thumbnail {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: transform 0.2s;
+        }
+
+        .thumbnail:hover {
+        transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+          <h1 id="hero-text">DISCOVER NEW PLACES</h1>
+        </div>
+        <div class="thumbnail-container">
+          <img class="thumbnail" src="assets/m1.jpg" alt="Image 1" data-text="DISCOVER NEW PLACES">
+          <img class="thumbnail" src="assets/m2.jpg" alt="Image 2" data-text="EXPLORE THE WORLD">
+          <img class="thumbnail" src="assets/m3.jpg" alt="Image 3" data-text="FIND YOUR ADVENTURE">
+        </div>
+      </div>
+      <script>
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const hero = document.querySelector('.hero');
+        const heroText = document.getElementById('hero-text');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                // Ubah background image dari hero section
+                hero.style.backgroundImage = `url(${thumbnail.src})`;
+                hero.style.backgroundSize = 'cover';
+                hero.style.backgroundPosition = 'center';
+                
+                // Ubah teks dari hero section
+                heroText.textContent = thumbnail.getAttribute('data-text');
+            });
+        });
+
+      </script>
+</body>
+</html>
