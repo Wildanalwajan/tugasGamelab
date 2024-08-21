@@ -17,6 +17,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Heebo:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Sankofa+Display&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Heebo:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Sankofa+Display&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=Heebo:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Sankofa+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=Heebo:wght@100..900&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Sankofa+Display&display=swap');
         body::-webkit-scrollbar {
             display: none;
         }
@@ -43,7 +44,7 @@
             text-align: left;
             background-color: #EEEEEE;
             border-radius: 15px;
-            padding: 0 30px;
+            padding: 30px 30px;
         }
 
         .hero img {
@@ -169,25 +170,11 @@
             z-index: 2;
             padding: 20px;
         }
-        
-        /* background about */
 
-        .blur {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .blur::before {
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            position: flex;
-            background-image: url('assets/m2');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            backdrop-filter: blur(5px);
+        .hero-text {
+            font-family: "Baskervville SC", serif;
+            font-weight: 400;
+            font-style: normal;
         }
 
         /* About end */
@@ -546,24 +533,52 @@
 
     <!-- About -->
 
-    <div class="container mt-4 about content-section" id="about">
-        <div class="blur-background">
-            <div class="blur-overlay"></div>
-            <div class="content">
-                <h1>Hello, Girl!</h1>
-                <p class="lead fst-italic fw-bold">Mustika Hijab adalah tempat beli Hijab terpercaya di daerah
-                    Ngaliyan Semarang,
-                    Kecamatan Ngaliyan, Kelurahan Kalipancur. Perusahaan ini didirikan seorang diri, cara ia
-                    berjualan
-                    bisa melalui online dan secara langsung</p>
-                <hr class="my-4">
-                <p class="fst-italic fw-bold">Untuk online hanya melayani melalui Instagram <i
-                        class="bi bi-instagram"></i>, untuk Instagramnya
-                    sendiri bernama <a href="https://www.instagram.com/mustikahijab.21" target="_blank">@mustikahijab.21</a></p>
-                <h2>Discover the beauty around the world</h2>
-                <p>Lets make people see your beauty with your hijab's and gamis's. And make your boyfriend more
-                    loving you as his wife</p>
-            </div>
+    <div class="container mt-4 about content-section mb-4" id="about">
+        <div class="hero mt-4">
+            <section class="hero-section container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="hero-text">
+                            I REALLY<br>
+                            LOVE TO<br>
+                            TALK WITH<br>
+                            PEOPLE
+                        </div>
+                        <div class="hero-text hero-signature">
+                            <p><strong>Mustika Hijab</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-md-9 hero-image text-center">
+                        <img src="assets\logo1" class="object-fit-cover" alt="Hero Image" height="300" width="300">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section container mt-4">
+                <div class="row">
+                    <div class="hero-text col-md-7">
+                        <p>Mustika Hijab, UMKM yang berbasis di Ngaliyan, Semarang, hadir dengan koleksi hijab dan gamis yang elegan dan berkualitas. Kami berkomitmen untuk menghadirkan pilihan busana muslimah yang tidak hanya cantik, tetapi juga nyaman dipakai sehari-hari.</p>
+                        <p>Dengan berbagai pilihan warna dan desain yang modis, Mustika Hijab siap menjadi sahabat setia para muslimah dalam mengekspresikan kecantikan dan kesucian dalam balutan hijab dan gamis. Kunjungi kami dan temukan gaya yang sesuai dengan kepribadian Anda!</p>
+                    </div>
+                    <div class="hero-text col-md-5">
+                        <div class="testimonial-quote">
+                            “Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. consectetur adipiscing elit, sed do eiusmod tempor”
+                        </div>
+                        <div class="testimonial-author">
+                            Testimonial by Cynthia Summer
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="hero-text social-links">
+                            <p>Follow Us</p>
+                            <a href="https://www.instagram.com/mustikahijab.21" style="text-decoration: none;">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 
@@ -571,7 +586,7 @@
 
     <div class="container rounded-5 mt-4 content-section" data-aos="fade-up" id="product">
         <div class="hero steps row mt-4 f-1" style="border-radius: 10px;">
-            <h1 class="h1produk text-center" style="padding-left: 50px; padding-right: 50px;">Produk</h1>
+            <h1 class="h1produk text-center">Produk</h1>
             <div class="col-md-4 step" data-aos="fade-in" data-aos-duration="5000">
                 <img src="assets/m6" alt="Img 1">
                 <div class="overlay">
