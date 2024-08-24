@@ -1,0 +1,350 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-family: "Matemasie", sans-serif;
+}
+
+body {
+    resize: both;
+    background-image: linear-gradient(to right, #080e3e, #22206b);
+    overflow-x: hidden;
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 40;
+    font-style: normal;
+    margin: 0 50px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    background-color: #EEEEEE;
+    border-radius: 15px;
+    padding: 30px 30px;
+}
+
+.hero img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Parallax */
+
+.parallax {
+    background-image: url('assets/wallpaper1');
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 800px;
+    width: 100%;
+}
+
+/* parallax end */
+
+/* Caraousel */
+
+.carousel-item img {
+    width: 60%;
+    height: 70%;
+    border-radius: 60px;
+    border: 2px solid #f8f9fa;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+/* Caraousel end*/
+
+/* about */
+
+.about {
+    margin: auto;
+}
+
+.blur-background {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #f8f9fa;
+    border-radius: 15px;
+}
+
+.blur-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('assets/m3');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    filter: blur(10px);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-text {
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* About end */
+
+
+
+/* galery */
+
+.titlegalery {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+}
+
+.gallery {
+    justify-content: center;
+    resize: both;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    object-fit:initial;
+    border-radius: 15%;
+    height: 300px;
+    margin: 20px;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {-
+    transform: scale(1.05);
+}
+
+/* Galery end */
+
+/* testimoni */
+
+.testimoni-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px
+}
+
+.testimoni-card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 15%;
+}
+
+.testimoni-card h5 {
+    margin-bottom: 20px;
+}
+
+.testi {
+    background-color: #EEEEEE;
+}
+
+/* testimoni end */
+
+/* FAQ */
+
+.FAQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    border-radius: 15px;
+}
+
+iframe {
+    height: 650px;
+}
+
+.accordion img {
+    border-radius: 100%;
+}
+
+.accordion-body {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+#pertanyaan .judul {
+    font-family: "Matemasie", sans-serif;
+}
+
+/* FAQ end */
+
+/* form */
+
+.form-container {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* contact us */
+
+.btncontact {
+    background-color: #eeeeee;
+}
+/* form end */
+
+/* footer */
+
+.footerdiv {
+    background-image: linear-gradient(to right, #080e3e, #22206b);
+    border-top: 2px solid white;
+    color: white;
+}
+
+.footerdiv a {
+    text-decoration: none;
+}
+
+.btnacc {
+    background-color: #eeeeee;
+}
+.btnacc:hover{
+    background-image: linear-gradient(to bottom, yellow, rgb(255, 255, 255));
+    color: lightcyan;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    border:2px solid #F0FFFF;
+}
+
+/* footer end */
+
+
+@media (max-width: 425px) {
+
+    body {
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+        background-repeat: round
+    }
+
+    /* Parallax */
+
+    #hiddenSection {
+        display: block;
+    }
+
+    .showButton {
+        display: none;
+    }
+
+    /* navbar */
+
+    .navbar {
+        background-image: linear-gradient(to right, #080e3ea8, #23206ba1);
+    }
+
+    .nav-item {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+        margin-right: 80px;
+    }
+
+    .navbar-brand {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+        margin-right: 80px;
+    }
+
+    .navbar-toggler {
+        display: block;
+        background-color: #eeeeee93;
+    }
+
+    .btn {
+        margin-right: 50px;
+    }
+
+    /* produk */
+
+    .step {
+        margin-right: 45px;
+    }
+
+    .step .overlay {
+        opacity: 0 !important;
+    }
+
+    .btn-phone {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .h1produk {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* galery */
+
+    .gallery img {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    /* FAQ */
+
+    .FAQ {
+        margin: 25px 0;
+    }
+
+    .accordion h1 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 25px;
+    }
+
+    .accordion img {
+        border-radius: 50%;
+    }
+
+    /* footer */
+
+    .maps {
+        width: 85%;
+        height: 180px;
+        margin-left: 25px;
+        margin-right: 50px;
+    }
+}
