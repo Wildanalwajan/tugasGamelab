@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Sankofa+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+JP:wght@100..900&family=Sankofa+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Heebo:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+JP:wght@100..900&family=Sankofa+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Heebo:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Sankofa+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Heebo:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Sankofa+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=Heebo:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Sankofa+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=Heebo:wght@100..900&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Sankofa+Display&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -41,7 +54,7 @@ body {
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover; 
-    height: 800px;
+    height: 100vh;
     width: 100%;
 }
 
@@ -67,7 +80,7 @@ body {
 /* about */
 
 .about {
-    margin: auto;
+    margin: 100vh;
 }
 
 .blur-background {
@@ -208,35 +221,11 @@ iframe {
 
 .btncontact {
     background-color: #eeeeee;
+    border: 2px solid burlywood;
 }
 /* form end */
 
-/* footer */
 
-.footerdiv {
-    background-image: linear-gradient(to right, #080e3e, #22206b);
-    border-top: 2px solid white;
-    color: white;
-}
-
-.footerdiv a {
-    text-decoration: none;
-}
-
-.btnacc {
-    background-color: #eeeeee;
-}
-.btnacc:hover{
-    background-image: linear-gradient(to bottom, yellow, rgb(255, 255, 255));
-    color: lightcyan;
-    font-family: "Edu VIC WA NT Beginner", cursive;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    border:2px solid #F0FFFF;
-}
-
-/* footer end */
 
 
 @media (max-width: 425px) {
@@ -346,5 +335,160 @@ iframe {
         height: 180px;
         margin-left: 25px;
         margin-right: 50px;
+    }
+}
+@media (min-width: 2560px) {
+
+    body{
+        font-size: 150px;
+        margin: auto;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    div .hero{
+        font-size: 100%;
+        margin:  0 100px;
+    }
+
+    .hero
+    {
+        font-size: 40px !important;
+        margin: 0 50px;
+    }
+
+    .hero img
+    {   
+        width: 80%;
+        height: 25%;
+    }
+
+    .container h1 
+    {
+        font-size: 100px;
+        margin: 15px 0;
+    }
+
+    /* produk */
+
+    .steps h5 
+    {
+        font-size: 60px;
+    }
+
+    .steps p
+    {
+        font-size: 40px;
+    }
+
+    /* navbar */
+    .navbar .container {
+        max-width: 100% !important;
+        width: 90% !important;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 40px !important;
+    }
+
+    .navbar .nav-link {
+        font-size: 35px !important;
+        margin: 18px !important;
+    }
+
+    .container
+    {
+        max-width: 90% !important;
+    }
+
+    #about img
+    {
+        width: 800px;
+        height: 800px;
+    }
+
+    .gallery img 
+    {
+        width: 25%;
+        height: auto;
+    }
+    /* testimoni */
+    .testi img
+    {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 15px;
+    }
+    .testi h5 
+    {
+        font-size: 45px;
+        line-height: 20px;
+        margin: 15px 0;
+    }
+    .testi h6
+    {
+        font-size: 35px;
+        line-height: 15px;
+        margin: 25px 0;
+    }
+
+    /* FAQ */
+
+    #pertanyaan {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    #pertanyaan h2
+    {
+        font-size: 50px;
+    }
+
+    #pertanyaan button
+    {
+        height: 80px;
+        font-size: 1.5rem;
+    }
+
+    #pertanyaan img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .justify-content-between .accordion
+    {
+        justify-content: space-between;
+        height: 500px;
+    }
+
+    /* form */
+
+    .form label
+    {
+        font-size: 50px;
+        line-height: 25px;
+    }
+
+    .form button {
+        font-size: 50px;
+        line-height: 25px;
+        border: 2px solid #000;
+    }
+
+    .form iframe
+    {
+        width: 80%;
+        height: 1000px;
+    }
+
+    .footerdiv
+    {
+        font-size: 1.5rem;
+        line-height: 50px;
+    }
+    
+    input
+    {
+        height: 80px;
     }
 }
