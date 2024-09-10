@@ -7,10 +7,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=Heebo:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Sankofa+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=Heebo:wght@100..900&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Sankofa+Display&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
-
 body::-webkit-scrollbar {
     display: none;
 }
@@ -37,7 +33,6 @@ body {
     text-align: left;
     background-color: #EEEEEE;
     border-radius: 15px;
-    padding: 30px 30px;
 }
 
 .hero img {
@@ -81,27 +76,7 @@ body {
 
 .about {
     margin: 100vh;
-}
-
-.blur-background {
-    position: relative;
-    border-radius: 15px;
-    overflow: hidden;
-    border: 2px solid #f8f9fa;
-    border-radius: 15px;
-}
-
-.blur-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url('assets/m3');
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
-    filter: blur(10px);
+    border-radius: 10px;
 }
 
 .content {
@@ -185,6 +160,13 @@ body {
     align-items: center;
     min-height: 10vh;
     border-radius: 15px;
+    background-color: #EEEEEE;
+}
+
+.fotoFAQ
+{
+    width: 100px;
+    border-radius: 50px;
 }
 
 iframe {
@@ -210,11 +192,21 @@ iframe {
 
 /* form */
 
-.form-container {
+.content-section
+{
     background-color: #f8f9fa;
     border-radius: 10px;
-    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    padding: 20px;
+}
+
+iframe
+{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 /* contact us */
@@ -233,7 +225,6 @@ iframe {
     body {
         justify-content: center;
         align-items: center;
-        margin: 0 5px;
     }
 
     .hero {
@@ -367,6 +358,16 @@ iframe {
     {
         font-size: 100px;
         margin: 15px 0;
+    }
+
+    .about
+    {
+        background-color: #EEEEEE;
+    }
+
+    .content-section
+    {
+        background-color: #EEEEEE;
     }
 
     /* produk */
