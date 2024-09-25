@@ -23,7 +23,10 @@ body {
     font-optical-sizing: auto;
     font-weight: 40;
     font-style: normal;
-    margin: 0 50px;
+    /* margin: 0 50px; */
+}
+body nav {
+    margin: 0, 25px !important;
 }
 
 .hero {
@@ -44,7 +47,7 @@ body {
 /* Parallax */
 
 .parallax {
-    background-image: url('assets/wallpaper1');
+    background-image: url('assets/wallpaper1.jpg');
     background-attachment: fixed;
     background-position: center; 
     background-repeat: no-repeat;
@@ -58,8 +61,8 @@ body {
 /* Caraousel */
 
 .carousel-item img {
-    width: 60%;
-    height: 70%;
+    width: 300px;
+    height: 900px;
     border-radius: 60px;
     border: 2px solid #f8f9fa;
 }
@@ -77,6 +80,7 @@ body {
 .about {
     margin: 100vh;
     border-radius: 10px;
+    background-color: #EEEEEE;
 }
 
 .content {
@@ -194,9 +198,13 @@ iframe {
 
 .content-section
 {
-    background-color: #f8f9fa;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form
+{
+    background-color: #f8f9fa;
 }
 
 .form-container {
@@ -209,12 +217,6 @@ iframe
     border-radius: 10px;
 }
 
-/* contact us */
-
-.btncontact {
-    background-color: #eeeeee;
-    border: 2px solid burlywood;
-}
 /* form end */
 
 
@@ -337,6 +339,27 @@ iframe
         line-height: 2rem;
     }
 
+    body .carousel-item{
+        margin: 0, 50px;
+    }
+
+    /* Caraousel */
+
+    .carousel-item img {
+        width: 300px;
+        height: 1900px;
+        border-radius: 60px;
+        border: 2px solid #f8f9fa;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #000;
+        border-radius: 50%;
+    }
+
+    /* Caraousel end*/
+
     div .hero{
         font-size: 100%;
         margin:  0 100px;
@@ -365,7 +388,7 @@ iframe
         background-color: #EEEEEE;
     }
 
-    .content-section
+    .isi
     {
         background-color: #EEEEEE;
     }
@@ -451,6 +474,11 @@ iframe
         font-size: 1.5rem;
     }
 
+    .accordion-header
+    {
+        font-size: 50px;        
+    }
+
     #pertanyaan img {
         width: 500px;
         height: 500px;
@@ -458,7 +486,6 @@ iframe
 
     .justify-content-between .accordion
     {
-        justify-content: space-between;
         height: 500px;
     }
 
@@ -479,17 +506,19 @@ iframe
     .form iframe
     {
         width: 80%;
-        height: 1000px;
+        height: 2000px;
     }
 
     .footerdiv
     {
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 50px;
     }
     
     input
     {
         height: 80px;
+        font-size: 2rem;
+        line-height: 50px;
     }
 }

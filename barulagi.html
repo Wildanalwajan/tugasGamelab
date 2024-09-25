@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>Your Website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -71,8 +71,9 @@
         }
 
         .step img {
-            width: 100%;
-            height: auto;
+            height: 400px;
+            width: 500px;
+            border-radius: 15%;
         }
 
         .step .overlay {
@@ -103,6 +104,11 @@
 
         .btn-phone {
             display: none;
+        }
+
+        .text {
+            height: 100px;
+             
         }
 
         /* produk end*/
@@ -150,8 +156,8 @@
     <!-- Navbar -->
 
     <nav id="navbar-example" class="navbar navbar-expand-lg  fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <div class="container-fluid mx-3">
+            <a class="navbar-brand" href="#">Mustika Hijab</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -177,17 +183,17 @@
 
     <!-- Carousel -->
 
-    <div id="home" style=" padding-top: 50px;" class="content-section">
+    <div id="home" class="content-section">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="assets/m1" class="d-block w-100" style="width: 12rem;" alt="...">
+                    <img src="assets/hijab(2).jpg" class="d-block w-100" style="width: 12rem;" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/m2" class="d-block w-100" style="width: 12rem;" alt="...">
+                    <img src="assets/hijab(3).jpg" class="d-block w-100" style="width: 12rem;" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="assets/m4" class="d-block w-100" style="width: 12rem;" alt="...">
+                    <img src="assets/hijab(1).jpg" class="d-block w-100" style="width: 12rem;" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -205,7 +211,7 @@
 
     <!-- About -->
 
-    <div class="container mt-4 about content-section mb-4" id="about">
+    <div class="container mt-4 about content-section mb-4 isi" id="about">
         <div class="hero mt-4">
             <section class="hero-section container">
                 <div class="row">
@@ -221,7 +227,7 @@
                         </div>
                     </div>
                     <div class="col-md-9 hero-image text-center" data-aos="zoom-in">
-                        <img src="assets/logo1" class="object-fit-cover" alt="Hero Image" height="300" width="300"> 
+                        <img src="assets/logo1.jpg" class="object-fit-cover" alt="Hero Image" height="300" width="300"> 
                     </div>
                 </div>
             </section>
@@ -256,83 +262,86 @@
 
     <!-- Produk -->
 
-    <div class="container rounded-5 mt-4 content-section" data-aos="flip-up" data-aos-duration="1500" id="product">
+    <div class="container rounded-5 mt-4 content-section isi" data-aos="flip-up" data-aos-duration="1500" id="product">
         <div class="hero steps row mt-4 f-1" style="border-radius: 10px;">
             <h1 class="h1produk text-center">Produk</h1>
             <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/m6" alt="Img 1">
+                <img src="assets/hijab.jpg" alt="Img 1" class="img-fluid mb-3">
                 <div class="overlay">
                     <div class="text">
-                        <p>harga: Rp 25.000,00<br>Yang tersedia hanya ukuran<br>apa hayo</p>
+                        <p>pashmina yang cocok banget dipakai untuk aktivitasmu sehari-hari adalah pashmina kaos. Bahannya juga nyaman dan menyerap keringat!</p>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Blue Baby Gamis</h5>
+                    <h5 class="card-title">Pashmina Kaos</h5>
                     <p class="card-text">With this color, it will make your more aggressive and gorgeous</p>
                     <button class="btn btn-phone btn-primary">Lihat</button>
                 </div>
             </div>
             <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/m5" alt="Img 2">
+                <img src="assets/hijab(1).jpg" alt="Img 2" class="img-fluid mb-3">
                 <div class="overlay">
                     <div class="text">
-                        <p>harga: Rp 25.000,00<br>Yang tersedia hanya ukuran<br>apa hayo</p>
+                        <p>Hijab bahan crinkle bisa kita pakai buat lebaran. Tinggal disesuaikan aja warnanya dengan outfit yang pengin dikenakan</p>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Misty Blue Gamis</h5>
+                    <h5 class="card-title">Pashmina bahan crinkle</h5>
                     <p class="card-text">With this color, it will make your more aggressive and gorgeous</p>
                     <button class="btn btn-phone btn-primary">Lihat</button>
                 </div>
             </div>
             <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/m4" alt="Img 3">
+                <img src="assets/hijab(2).jpg" alt="Img 3" class="img-fluid mb-3">
                 <div class="overlay">
                     <div class="text">
-                        <p>harga: Rp 25.000,00<br>Yang tersedia hanya ukuran<br>apa hayo</p>
+                        <p>Buat yang outfit lebarannya warna putih atau yang polosan aja, bisa memilih hijab bermotif yang senada.
+                            Hijab bermotif dijamin bikin tampilan kita enggak monoton dan makin modis!</p>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Navy Gamis</h5>
+                    <h5 class="card-title">Hijab segi empat motif</h5>
                     <p class="card-text">With this color, it will make your more aggressive and gorgeous</p>
                     <button class="btn btn-phone btn-primary">Lihat</button>
                 </div>
             </div>
             <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/m3" alt="Img 4">
+                <img src="assets/hijab(3).jpg" alt="Img 4" class="img-fluid mb-3">
                 <div class="overlay">
                     <div class="text">
-                        <p>harga: Rp 25.000,00<br>Yang tersedia hanya ukuran<br>apa hayo</p>
+                        <p>Buat yang pakai outfit dengan bahan brokat, tulle, atau pun punya banyak detail, bisa memilih hijab polos dengan warna pastel</p>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Blue Baby Gamis</h5>
+                    <h5 class="card-title"> Hijab Segi Empat warna pastel</h5>
                     <p class="card-text">With this color, it will make your more aggressive and gorgeous</p>
                     <button class="btn btn-phone btn-primary">Lihat</button>
                 </div>
             </div>
             <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/m2" alt="Img 5">
+                <img src="assets/hijab(4).jpg" alt="Img 5" class="img-fluid mb-3">
                 <div class="overlay">
                     <div class="text">
-                        <p>harga: Rp 25.000,00<br>Yang tersedia hanya ukuran<br>apa hayo</p>
+                        <p>Bahan dasar dari kain satin adalah serat filament yang memilik jenis sutra, polyester, atau nilon. Ciri khas dari kain satin adalah mengilap dan terlihat mewah, sehingga sering digunakan untuk acara formal atau resmi.
+                            Serat kain satin sangat tipis dan lembut sehingga kita perlu berhati-hati memakainya agar tidak mudah robek. Ada beberapa jenis hijab satin yaitu satin velvet, satin silk, dan Roberto Cavalli.</p>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Misty Blue Gamis</h5>
+                    <h5 class="card-title">Hijab Kain Satin</h5>
                     <p class="card-text">With this color, it will make your more aggressive and gorgeous</p>
                     <button class="btn btn-phone btn-primary">Lihat</button>
                 </div>
             </div>
             <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/m1" alt="Img 6">
+                <img src="assets/hijab(5).jpg" alt="Img 6" class="img-fluid mb-3">
                 <div class="overlay">
                     <div class="text">
-                        <p>harga: Rp 25.000,00<br>Yang tersedia hanya ukuran<br>apa hayo</p>
+                        <p>Saat ini penggunaan instan hijab salah satunya model pashmina lagi digemari banget.
+                            Enggak heran sih pashmina yang udah dilengkapi inner ini dinilai praktis banget buat dipakai di berbagai kegiatan</p>
                     </div>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Navy Gamis</h5>
+                    <h5 class="card-title">Instant pashmina bahan ceruti</h5>
                     <p class="card-text">With this color, it will make your more aggressive and gorgeous</p>
                     <button class="btn btn-phone btn-primary">Lihat</button>
                 </div>
@@ -342,14 +351,14 @@
 
     <!-- Galery -->
 
-    <div class="container mt-4 titlegalery" data-aos="flip-down">
+    <div class="container mt-4 titlegalery isi" data-aos="flip-down">
         <h1 class="text-center mb-5">Gallery</h1>
         <div class="gallery">
-            <img src="assets/mg1" alt="Image 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-aos="flip-up" data-aos-duration="1500"
+            <img src="assets/mg1.jpg" alt="Image 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-aos="flip-up" data-aos-duration="1500"
              data-bs-img="assets/mg1">
-            <img src="assets/mg2" alt="Image 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-aos="flip-up" data-aos-duration="2000"
+            <img src="assets/mg2.jpg" alt="Image 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-aos="flip-up" data-aos-duration="2000"
              data-bs-img="assets/mg2">
-            <img src="assets/mg3" alt="Image 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-aos="flip-up" data-aos-duration="2500"
+            <img src="assets/mg3.jpg" alt="Image 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-aos="flip-up" data-aos-duration="2500"
              data-bs-img="assets/mg3">
         </div>
     </div>
@@ -371,13 +380,13 @@
 
     <!-- Testismoni -->
 
-    <div class="container mt-4 testi" style="border-radius: 15px; background-color: EEEEEE;">
+    <div class="container mt-4 testi isi" style="border-radius: 15px; background-color: EEEEEE;">
         <h1 class="text-center mb-4">Testimoni Pelanggan</h1>
         <div class="hero">
             <div class="row justify-content-center">
                 <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="1500">
                     <div class="testimoni-card text-center">
-                        <img src="assets/HibinoKafka" alt="Customer 1" class="img-fluid mb-3">
+                        <img src="assets/HibinoKafka.jpg" alt="Customer 1" class="img-fluid mb-3">
                         <h5>Hibino Kafka</h5>
                         <h6 style="border-bottom:2px solid #000;">pelanggan pertama</h6>
                         <p class="mt-1">Produk yang sangat bagus! Saya sangat puas dengan kualitas hijab yang saya
@@ -387,7 +396,7 @@
                 </div>
                 <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="testimoni-card text-center">
-                        <img src="assets/Sopo" alt="Customer 2" class="img-fluid mb-3">
+                        <img src="assets/Sopo.jpg" alt="Customer 2" class="img-fluid mb-3">
                         <h5>Sopo</h5>
                         <h6 style="border-bottom:2px solid #000;">Pedagang</h6>
                         <p class="mt-1">Pelayanan yang sangat ramah dan profesional. Hijabnya sangat nyaman dipakai
@@ -397,7 +406,7 @@
                 </div>
                 <div class="col-md-4" data-aos="fade-up-left" data-aos-duration="1500">
                     <div class="testimoni-card text-center">
-                        <img src="assets/ElonMusk" alt="Customer 3" class="img-fluid mb-3">
+                        <img src="assets/ElonMusk.jpg" alt="Customer 3" class="img-fluid mb-3">
                         <h5>Elon Musk</h5>
                         <h6 style="border-bottom:2px solid #000;">Pengusaha</h6>
                         <p class="mt-1">Saya sangat merekomendasikan Mustika Hijab! Harganya terjangkau dan
@@ -411,7 +420,7 @@
 
     <!-- FAQ Section -->
 
-    <section id="pertanyaan" class="container FAQ mt-4 py-3 py-md-5">
+    <section id="pertanyaan" class="container FAQ mt-4 py-3 py-md-5 isi">
         <div class="container">
             <div class="row">
                 <div class="judul col-12 text-center mb-4">
@@ -486,7 +495,7 @@
                 <!-- Bagian kanan: Gambar -->
                 <div class="col-md-5 d-flex align-items-center text-center fotoFAQ" data-aos="zoom-in">
                     <div class="text-center">
-                        <img src="assets/logo1" class="img-fluid" style="border-radius: 15px;">
+                        <img src="assets/logo1.jpg" class="img-fluid" style="border-radius: 15px;">
                     </div>
                 </div>
             </div>
@@ -495,10 +504,10 @@
 
     <!-- Form Section -->
 
-    <div class="container form mt-4 content-section" id="contact">
+    <div class="container mt-4 content-section form isi" id="contact">
         <div class="form-container">
             <div class="row">
-                <section class="bg-light py-3 py-md-5" style="background-color: #F8EDE3;">
+                <section class="py-3 py-md-5 border">
                     <div class="container">
                         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-xl-center">
                             <div class="col-12 col-lg-6 map">
@@ -564,7 +573,7 @@
                                                     </div>
                                                     <div class="col-12">
                                                         <div class="d-grid">
-                                                            <button class="btn btncontact" type="submit">Send
+                                                            <button class="btn " type="submit">Send
                                                                 Message</button>
                                                         </div>
                                                     </div>
