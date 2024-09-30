@@ -254,20 +254,18 @@ iframe
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: 150px;
-        margin-right: 80px;
+        margin: 0 !important;
     }
 
     .navbar-brand {
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: 150px;
-        margin-right: 80px;
+        margin: 0, 500px;
     }
 
     .navbar-toggler {
-        display: block;
+        /* display: block; */
         background-color: #eeeeee93;
     }
 
@@ -506,7 +504,7 @@ iframe
     .form iframe
     {
         width: 80%;
-        height: 2000px;
+        height: 1000px;
     }
 
     .footerdiv
