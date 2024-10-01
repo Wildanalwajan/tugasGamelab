@@ -97,7 +97,52 @@ body nav {
 
 /* About end */
 
+/* produk */
 
+.step {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.step img {
+    height: 400px;
+    width: 500px;
+    border-radius: 15%;
+}
+
+.step .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step .overlay .text {
+    color: white;
+    font-size: 20px;
+}
+
+.btn-phone {
+    display: none;
+}
+
+.text {
+    height: 100px;
+        
+}
+
+/* produk end*/
 
 /* galery */
 
@@ -219,8 +264,34 @@ iframe
 
 /* form end */
 
+/* footer */
 
+.footerdiv {
+    background-image: linear-gradient(to right, #080e3e, #22206b);
+    border-top: 2px solid white;
+    color: white;
+}
 
+.footerdiv a {
+    text-decoration: none;
+}
+
+.btnacc {
+    background-color: #eeeeee;
+    color:#000;
+}
+
+.btnacc:hover{
+    background-image: linear-gradient(to bottom, yellow, rgb(255, 255, 255));
+    color: lightcyan;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    border:2px solid #F0FFFF;
+}
+
+/* footer end */
 
 @media (max-width: 425px) {
 
