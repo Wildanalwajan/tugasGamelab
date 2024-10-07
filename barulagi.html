@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
 
-           
+    @import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');           
     @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Sankofa+Display&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+JP:wght@100..900&family=Sankofa+Display&display=swap');
@@ -19,63 +19,60 @@
     @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=Heebo:wght@100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Permanent+Marker&family=Sankofa+Display&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=Heebo:wght@100..900&family=Matemasie&family=Noto+Sans+JP:wght@100..900&family=Sankofa+Display&display=swap');
 
+    .container {
+        margin-top: auto;
+    }
         /* navbar */
-            .navbar {
-                font-family: "Matemasie", sans-serif;
-                background-image: linear-gradient(to right, #080e3e, #22206b);
-                border-bottom: 2px solid #ffffff;
-            }
 
-            .navbar-brand {
-                font-weight: bold;
-                background-image: linear-gradient(to right, red, blue);
-                background-clip: text;
-                color: transparent;
-                font-size: 1.5rem;
-            }
+        .navbar {
+            font-family: "Matemasie", sans-serif;
+            background-image: linear-gradient(to right, #080e3e, #22206b);
+            border-bottom: 2px solid #ffffff;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            background-image: linear-gradient(to right, red, blue);
+            background-clip: text;
+            color: transparent;
+            font-size: 1.5rem;
+        }
+        .navbar-brand:hover {
+            font-weight: bold;
+            background-image: linear-gradient(126deg, red, blue, white );
+            background-clip: text;
+            border-bottom: 2px solid white;
+            color: transparent;
+            font-size: 1.5rem;
+        }
+        .nav-item .nav-link {
+            background-image: linear-gradient(to top, white, rgb(151, 151, 151));
+            background-clip: text; 
+            color: transparent;
+        }
+        .nav-item .nav-link:hover {
+            background-image: linear-gradient(25deg, white, blue);
+            background-clip: text;
+            color: transparent;
+        }
+        .nav-item .nav-link.active {
+            background-image: linear-gradient(to bottom, white, blue);
+            background-clip: text;
+            color: transparent;
+            background-color: transparent;
+            border-bottom: 2px solid #F8EDE3;
+        }
 
-            .navbar-brand:hover {
-                font-weight: bold;
-                background-image: linear-gradient(126deg, red, blue, white );
-                background-clip: text;
-                border-bottom: 2px solid white;
-                color: transparent;
-                font-size: 1.5rem;
-            }
-
-            .nav-item .nav-link {
-                font-family: "Matemasie", sans-serif;
-                background-image: linear-gradient(to top, white, rgb(151, 151, 151));
-                background-clip: text; 
-                color: transparent;
-            }
-
-            .nav-item .nav-link:hover {
-                background-image: linear-gradient(25deg, white, blue);
-                background-clip: text;
-                color: transparent;
-            }
-
-            .nav-item .nav-link.active {
-                background-image: linear-gradient(to bottom, white, blue);
-                background-clip: text;
-                color: transparent;
-                background-color: transparent;
-                border-bottom: 2px solid #F8EDE3;
-            }
         /* navbar end */
 
         body::-webkit-scrollbar {
             display: none;
         }
-
         h1 {
             font-family: "Istok Web", sans-serif;
             font-weight: bold;
             font-size: 50%vh;
             margin: 10%px, 0;
         }
-
         body {
             resize: both;
             background-image: linear-gradient(to right, #080e3e, #22206b);
@@ -84,12 +81,10 @@
             font-optical-sizing: auto;
             font-weight: 40;
             font-style: normal;
-            /* margin: 0 50px; */
         }
         body nav {
             margin: 0, 25px !important;
         }
-
         .hero {
             display: flex;
             align-items: center;
@@ -98,7 +93,6 @@
             background-color: #EEEEEE;
             border-radius: 15px;
         }
-
         .hero img {
             max-width: 100%;
             border-radius: 10px;
@@ -116,22 +110,44 @@
             height: 100vh;
             width: 100%;
         }
+        .text-parrallax {
+            font-size: 50px;
+        }
+        .text-parrallax h1 {
+            font-family: "Matemasie", sans-serif;
+            background-image: linear-gradient(to right, red, blue);
+            background-clip: text;
+            color: transparent;
+        }
+        .RTshop {
+            font-family: "Kumar One", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #000;
+        }
+        .RTshop:hover {
+            color: #FfFFFF;
+            border: 4px solid #000;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.211);
+            backdrop-filter: blur(10px);
+        }
+        .s {
+            font-size: 30px;
+        }
 
         /* parallax end */
 
         /* Caraousel */
 
+        .carousel {
+            padding: 15px 80px 0;
+        }
         .carousel-item img {
-            width: 300px;
-            height: 900px;
+            width: 100px;
+            height: 500px;
             border-radius: 60px;
             border: 2px solid #f8f9fa;
-        }
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: #000;
-            border-radius: 50%;
         }
 
         /* Caraousel end*/
@@ -142,13 +158,11 @@
             border-radius: 10px;
             background-color: #EEEEEE;
         }
-
         .content {
             position: relative;
             z-index: 2;
             padding: 20px;
         }
-
         .hero-text {
             font-family: "Baskervville SC", serif;
             font-weight: 400;
@@ -165,16 +179,14 @@
             margin-bottom: 20px;
             text-align: center;
         }
-
         .step img {
-            height: 400px;
-            width: 500px;
+            height: 300px;
+            width: 400px;
             border-radius: 15%;
         }
         .btn-phone {
             display: none;
         }
-
         .text {
             height: 100px;
         }
@@ -212,14 +224,12 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px 20px;
         }
-
         .gallery {
             justify-content: center;
             resize: both;
             display: flex;
             flex-wrap: wrap;
         }
-
         .gallery img {
             object-fit:initial;
             border-radius: 15%;
@@ -229,7 +239,6 @@
             cursor: pointer;
             transition: transform 0.2s;
         }
-
         .gallery img:hover {
             transform: scale(1.05);
         }
@@ -244,17 +253,14 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 5px
         }
-
         .testimoni-card img {
             height: 100px;
             width: 100px;
             border-radius: 15%;
         }
-
         .testimoni-card h5 {
             margin-bottom: 20px;
         }
-
         .testi {
             background-color: #EEEEEE;
         }
@@ -271,27 +277,22 @@
             border-radius: 15px;
             background-color: #EEEEEE;
         }
-
         .fotoFAQ
         {
             border-radius: 50px;
         }
-
         iframe {
             height: 650px;
         }
-
         .accordion img {
             border-radius: 100%;
         }
-
         .accordion-body {
             font-family: "Edu VIC WA NT Beginner", cursive;
             font-optical-sizing: auto;
             font-weight: bold;
             font-style: normal;
         }
-
         #pertanyaan .judul {
             font-family: "Matemasie", sans-serif;
         }
@@ -305,16 +306,13 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
         .form
         {
             background-color: #f8f9fa;
         }
-
         .form-container {
             padding: 20px;
         }
-
         iframe
         {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -330,16 +328,13 @@
             border-top: 2px solid white;
             color: white;
         }
-
         .footerdiv a {
             text-decoration: none;
         }
-
         .btnacc {
             background-color: #eeeeee;
             color:#000;
         }
-
         .btnacc:hover{
             background-image: linear-gradient(to bottom, yellow, rgb(255, 255, 255));
             color: lightcyan;
@@ -356,15 +351,33 @@
             body::-webkit-scrollbar {
                 display:flex;
             }
-
             body {
                 justify-content: center;
                 align-items: center;
             }
-
             .hero {
                 flex-direction: column;
                 background-repeat: round
+            }
+            .hero-text {
+                font-weight: 600px;
+            }
+
+            /* Carousel */
+
+            .carousel {
+                padding: 0;
+                left: 0;
+                width: 100%;
+            }
+            .carousel-item img {
+                width: 100px;
+                height: 500px;
+                border-radius: 60px;
+                border: 2px solid #f8f9fa;
+            }
+            .carousel-indicators {
+                bottom: 10px;
             }
 
             /* Parallax */
@@ -372,9 +385,18 @@
             #hiddenSection {
                 display: block;
             }
-
             .showButton {
                 display: none;
+            }
+            .pRTshop {
+                display: none;
+            }
+            .s {
+                font-size: 25px;
+                margin: 80;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
             }
 
             /* navbar */
@@ -382,28 +404,34 @@
             .navbar {
                 background-image: linear-gradient(to right, #080e3ea8, #23206ba1);
             }
-
             .nav-item {
                 text-align: center;
                 justify-content: center;
                 align-items: center;
                 margin: 0 !important;
             }
-
             .navbar-brand {
                 text-align: center;
                 justify-content: center;
                 align-items: center;
                 margin: 0, 500px;
             }
-
             .navbar-toggler {
-                /* display: block; */
                 background-color: #eeeeee93;
             }
-
             .btn {
                 margin-right: 50px;
+            }
+
+            /* about */
+
+            .ibout {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .penjelasan {
+                font-weight: bold;
             }
 
             /* produk */
@@ -411,11 +439,9 @@
             .step {
                 margin-right: 45px;
             }
-
             .step .overlay {
                 opacity: 0 !important;
             }
-
             .btn-phone {
                 display: block;
                 width: 100%;
@@ -445,14 +471,12 @@
             .FAQ {
                 margin: 25px 0;
             }
-
             .accordion h1 {
                 justify-content: center;
                 align-items: center;
                 text-align: center;
                 margin: 0 25px;
             }
-
             .accordion img {
                 border-radius: 50%;
             }
@@ -474,7 +498,6 @@
                 font-size: 1.5rem;
                 line-height: 2rem;
             }
-
             body .carousel-item{
                 margin: 0, 50px;
             }
@@ -487,7 +510,6 @@
                 border-radius: 60px;
                 border: 2px solid #f8f9fa;
             }
-
             .carousel-control-prev-icon,
             .carousel-control-next-icon {
                 background-color: #000;
@@ -496,34 +518,32 @@
 
             /* Caraousel end*/
 
+            .about {
+                line-height: 1;
+            }
             div .hero{
                 font-size: 100%;
                 margin:  0 100px;
             }
-
             .hero
             {
                 font-size: 40px !important;
                 margin: 0 50px;
             }
-
             .hero img
             {   
                 width: 80%;
                 height: 25%;
             }
-
             .container h1 
             {
                 font-size: 100px;
                 margin: 15px 0;
             }
-
             .about
             {
                 background-color: #EEEEEE;
             }
-
             .isi
             {
                 background-color: #EEEEEE;
@@ -535,44 +555,48 @@
             {
                 font-size: 60px;
             }
-
             .steps p
             {
                 font-size: 40px;
             }
+            .step img {
+                width: 800px;
+                height: 800px;
+            }
 
             /* navbar */
+
             .navbar .container {
                 max-width: 100% !important;
                 width: 90% !important;
             }
-
             .navbar .navbar-brand {
                 font-size: 40px !important;
             }
-
             .navbar .nav-link {
                 font-size: 35px !important;
                 margin: 18px !important;
             }
-
             .container
             {
                 max-width: 90% !important;
             }
-
             #about img
             {
                 width: 800px;
                 height: 800px;
             }
-
             .gallery img 
             {
                 width: 25%;
                 height: auto;
             }
+            .isi h5 {
+                font-size: 45px;
+            }
+
             /* testimoni */
+
             .testi img
             {
                 width: 400px;
@@ -591,6 +615,13 @@
                 line-height: 15px;
                 margin: 25px 0;
             }
+            .testimoni-card p{
+                font-weight: 400;
+                line-height: 1;
+            }
+            .judultesti {
+                font-size: 80px;
+            }
 
             /* FAQ */
 
@@ -598,28 +629,26 @@
                 font-size: 50px;
                 line-height: 50px;
             }
-
             #pertanyaan h2
             {
                 font-size: 50px;
             }
-
             #pertanyaan button
             {
                 height: 80px;
                 font-size: 1.5rem;
             }
-
             .accordion-header
             {
                 font-size: 50px;        
             }
-
+            .accordion-header .accordion-button {
+                font-size: 150px;
+            }
             #pertanyaan img {
                 width: 500px;
                 height: 500px;
             }
-
             .justify-content-between .accordion
             {
                 height: 500px;
@@ -629,33 +658,37 @@
 
             .form label
             {
-                font-size: 50px;
+                font-size: 30px;
                 line-height: 25px;
             }
-
             .form button {
                 font-size: 50px;
                 line-height: 25px;
                 border: 2px solid #000;
             }
-
             .form iframe
             {
                 width: 80%;
                 height: 1000px;
             }
-
             .footerdiv
             {
                 font-size: 2rem;
                 line-height: 50px;
             }
-            
             input
             {
                 height: 80px;
                 font-size: 2rem;
                 line-height: 50px;
+            }
+            .footerdiv {
+                font-size: 25px;
+                line-height: 1.5;
+                font-weight: bold;
+            }
+            .input-groub {
+                font-size: 25px;
             }
         }
     </style>
@@ -668,6 +701,11 @@
     <!-- Parallax -->
 
     <div class="accordion parallax d-flex justify-content-center align-items-center" id="umkm"> 
+        <div class="text-parrallax justify-content-center align-items-center text-center">
+            <h1>Mustika Hijab</h1>
+            <p class="fw-bold s">Siap sedia mahkota untuk sang ratu</p>
+            <p class="fw-bold pRTshop"><a href="#product" class="RTshop text-decoration-none">Ready to shoping</a></p>
+        </div>
     </div>
 
     <!-- Navbar -->
@@ -697,10 +735,16 @@
             </div>
         </div>
     </nav>
+
     <!-- Carousel -->
 
     <div id="home" class="content-section">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators mb-1">
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="assets/hijab(2).jpg" class="d-block w-100" style="width: 12rem;" alt="...">
@@ -712,16 +756,6 @@
                     <img src="assets/hijab(1).jpg" class="d-block w-100" style="width: 12rem;" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
 
@@ -731,7 +765,7 @@
         <div class="hero mt-4">
             <section class="hero-section container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 ibout">
                         <div class="hero-text">
                             I REALLY<br>
                             LOVE TO<br>
@@ -748,7 +782,7 @@
                 </div>
             </section>
             
-            <section class="content-section container mt-4">
+            <section class="content-section container mt-4 penjelasan">
                 <div class="row">
                     <div class="hero-text col-md-7">
                         <p>Mustika Hijab, UMKM yang berbasis di Ngaliyan, Semarang, hadir dengan koleksi hijab dan gamis yang elegan dan berkualitas. Kami berkomitmen untuk menghadirkan pilihan busana muslimah yang tidak hanya cantik, tetapi juga nyaman dipakai sehari-hari.</p>
@@ -884,7 +918,7 @@
     <!-- Testismoni -->
 
     <div class="container mt-4 testi isi" style="border-radius: 15px; background-color: EEEEEE;">
-        <h1 class="text-center mb-4">Testimoni Pelanggan</h1>
+        <h1 class="judultesti text-center mb-4">Testimoni Pelanggan</h1>
         <div class="hero">
             <div class="row justify-content-center">
                 <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="1500">
