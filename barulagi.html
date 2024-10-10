@@ -40,7 +40,6 @@
             font-weight: bold;
             background-image: linear-gradient(126deg, red, blue, white );
             background-clip: text;
-            border-bottom: 2px solid white;
             color: transparent;
             font-size: 1.5rem;
         }
@@ -61,7 +60,9 @@
             background-color: transparent;
             border-bottom: 2px solid #F8EDE3;
         }
-
+        nav {
+            margin: 0, 25px !important;
+        }
         /* navbar end */
 
         body::-webkit-scrollbar {
@@ -77,13 +78,6 @@
             resize: both;
             background-image: linear-gradient(to right, #080e3e, #22206b);
             overflow-x: hidden;
-            font-family: "Heebo", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 40;
-            font-style: normal;
-        }
-        body nav {
-            margin: 0, 25px !important;
         }
         .hero {
             display: flex;
@@ -127,10 +121,9 @@
         }
         .RTshop:hover {
             color: #FfFFFF;
-            border: 4px solid #000;
+            border: 4px solid #00000035;
+            background-color: rgba(128, 0, 128, 0.241);
             border-radius: 15px;
-            background-color: rgba(255, 255, 255, 0.211);
-            backdrop-filter: blur(10px);
         }
         .s {
             font-size: 30px;
@@ -157,9 +150,9 @@
 
         /* about */
         .about {
-            /* margin: 100vh; */
             border-radius: 10px;
             background-color: #EEEEEE;
+            padding: 2vh;
         }
         .content {
             position: relative;
@@ -176,86 +169,32 @@
 
         /* produk */
 
-        .step {
-            position: relative;
-            overflow: hidden;
-            margin-bottom: 20px;
-            text-align: center;
+        .card-img-top {
+            height: 250px;
+            width: 50%;
+            border-radius: 15px;
+            padding-top: 10px;
+        }
+        .produk {
+            background-color: #EEEEEE;
+            border-radius: 15px;
+        }
+        .isip {
+            padding: 15px;
+        }
+        .produk .row {
             font-family: "Baskervville SC", serif;
             font-weight: 400px;
             font-style: normal;
         }
-        .step img {
-            height: 300px;
-            width: 400px;
-            border-radius: 15%;
-        }
-        .steps h5 {
-            font-family: "Baskervville SC", serif;
-            font-weight: 400px;
-            font-style: normal;
-        }
-        .btn-phone {
-            display: none;
-        }
-        .text {
-            height: 100px;
-        }
-        .step:hover .button-container {
-            opacity: 1;
-        }
-        .step:hover .card-text {
-            opacity: 0;
-        }
-        .quick-shop {
-            font-size: medium;
+        .isip h1 {
+            font-family: "Istok Web", sans-serif;
             font-weight: bold;
-            color: black;
-            border: 2px solid white;
-            box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .button-container {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+            font-size: 50%vh;
+            margin: 10%px, 0;
         }
 
         /* produk end*/
-
-        /* galery */
-
-        .titlegalery {
-            background-color: #EEEEEE;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px 20px;
-            font-family: "Baskervville SC", serif;
-            font-weight: 400px;
-            font-style: normal;
-        }
-        .gallery {
-            justify-content: center;
-            resize: both;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .gallery img {
-            object-fit:initial;
-            border-radius: 15%;
-            height: 300px;
-            margin: 20px;
-            width: 200px;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
 
         /* Galery end */
 
@@ -569,17 +508,29 @@
 
             /* produk */
 
-            .steps h5 
-            {
-                font-size: 60px;
+            .card img {
+                height: 600px;
             }
-            .steps p
-            {
+            .card-text {
+                font-size: 35px;
+                font-weight: 400px;
+            }
+            .card-title {
+                font-weight: 400;
+                font-size: 50px;
+                line-height: 1;
+            }
+            .modal-body {
+                font-size: 35px;
+                font-weight: 400px;
+                line-height: 1;
+            }
+            .modal-title {
                 font-size: 40px;
             }
-            .step img {
-                width: 800px;
-                height: 800px;
+            .bawah button {
+                margin: 1.5rem;
+                font-size: 1.2rem;
             }
 
             /* navbar */
@@ -721,13 +672,12 @@
     <div class="accordion parallax d-flex justify-content-center align-items-center" id="umkm"> 
         <div class="text-parrallax justify-content-center align-items-center text-center">
             <h1>Mustika Hijab</h1>
-            <p class="fw-bold s">Siap sedia mahkota untuk sang ratu</p>
+            <p class="fw-bold s">Sedia berbagai mahkota untuk sang ratu</p>
             <p class="fw-bold pRTshop"><a href="#product" class="RTshop text-decoration-none">Ready to shoping</a></p>
         </div>
     </div>
 
     <!-- Navbar -->
-
     <nav id="navbar-example" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Mustika Hijab</a>
@@ -755,7 +705,6 @@
     </nav>
 
     <!-- Carousel -->
-
     <div id="home" class="content-section">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators mb-1">
@@ -778,7 +727,6 @@
     </div>
 
     <!-- About -->
-
     <div class="container mt-4 about content-section mb-4 isi" id="about">
         <div class="hero mt-4">
             <section class="hero-section container">
@@ -828,108 +776,91 @@
         </div>
     </div>
 
-    <!-- Produk -->
-
-    <div class="container rounded-5 mt-4 content-section isi" data-aos="flip-up" data-aos-duration="1500" id="product">
-        <div class="hero steps row mt-4 f-1" style="border-radius: 10px;">
-            <h1 class="h1produk text-center">Produk</h1>
-            <h5 class="text-center">Rekomendasi</h5>
-            <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/hijab.jpg" alt="Img 1" class="img-fluid mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Pashmina Kaos</h5>
-                    <p class="card-text">Rp 25.000,00 IDR</p>
-                    <button class="btn btn-phone btn-primary">Lihat</button>
-                </div>
-                <div class="button-container">
-                    <button class="quick-shop">Quick Shop</button>
+    <!-- product -->
+    <div class="container produk">
+        <div class="row isip">
+            <h1 class="justify-content-center align-items-center text-center">Produk</h1>
+            <div class="col-md-4">
+                <div class="card justify-content-center align-items-center text-center" data-bs-toggle="modal" data-bs-target="#productModal1">
+                    <img src="assets/hijab.jpg" class="card-img-top img-fluid" alt="Produk 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Produk 1</h5>
+                        <p class="card-text">Pashmina Kaos</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/hijab(1).jpg" alt="Img 2" class="img-fluid mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Pashmina bahan crinkle</h5>
-                    <p class="card-text">Rp 25.000,00 IDR</p>
-                    <button class="btn btn-phone btn-primary">Lihat</button>
-                </div>
-                <div class="button-container">
-                    <button class="quick-shop">Quick Shop</button>
+            <div class="col-md-4">
+                <div class="card justify-content-center align-items-center text-center" data-bs-toggle="modal" data-bs-target="#productModal2">
+                    <img src="assets/hijab(1).jpg" class="card-img-top" alt="Produk 2">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Produk 2</h5>
+                        <p class="card-text">Pashmina bahan crinkle</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/hijab(2).jpg" alt="Img 3" class="img-fluid mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Hijab segi empat motif</h5>
-                    <p class="card-text">Rp 25.000,00 IDR</p>
-                    <button class="btn btn-phone btn-primary">Lihat</button>
-                </div>
-                <div class="button-container">
-                    <button class="quick-shop">Quick Shop</button>
-                </div>
-            </div>
-            <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/hijab(3).jpg" alt="Img 4" class="img-fluid mb-3">
-                <div class="card-body">
-                    <h5 class="card-title"> Hijab Segi Empat warna pastel</h5>
-                    <p class="card-text">Rp 25.000,00 IDR</p>
-                    <button class="btn btn-phone btn-primary">Lihat</button>
-                </div>
-                <div class="button-container">
-                    <button class="quick-shop">Quick Shop</button>
-                </div>
-            </div>
-            <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/hijab(4).jpg" alt="Img 5" class="img-fluid mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Hijab Kain Satin</h5>
-                    <p class="card-text">Rp 25.000,00 IDR</p>
-                    <button class="btn btn-phone btn-primary">Lihat</button>
-                </div>
-                <div class="button-container">
-                    <button class="quick-shop">Quick Shop</button>
-                </div>
-            </div>
-            <div class="col-md-4 step" data-aos="fade-up" data-aos-duration="1500">
-                <img src="assets/hijab(5).jpg" alt="Img 6" class="img-fluid mb-3">
-                <div class="card-body">
-                    <h5 class="card-title">Instant pashmina bahan ceruti</h5>
-                    <p class="card-text">Rp 25.000,00 IDR</p>
-                    <button class="btn btn-phone btn-primary">Lihat</button>
-                </div>
-                <div class="button-container">
-                    <button class="quick-shop">Quick Shop</button>
+            <div class="col-md-4">
+                <div class="card justify-content-center align-items-center text-center" data-bs-toggle="modal" data-bs-target="#productModal3">
+                    <img src="assets/hijab(2).jpg" class="card-img-top" alt="Produk 3">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Produk 3</h5>
+                        <p class="card-text">Hijab segi empat motif</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Galery -->
-
-    <div class="container mt-4 titlegalery isi" data-aos="flip-down">
-        <h1 class="text-center">Gallery</h1>
-        <h5 class="text-center">berikut galery kami</h5>
-        <div class="gallery">
-            <img src="assets/mg1.jpg" alt="Image 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-aos="flip-up" data-aos-duration="1500"
-             data-bs-img="assets/mg1">
-            <img src="assets/mg2.jpg" alt="Image 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-aos="flip-up" data-aos-duration="2000"
-             data-bs-img="assets/mg2">
-            <img src="assets/mg3.jpg" alt="Image 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-aos="flip-up" data-aos-duration="2500"
-             data-bs-img="assets/mg3">
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detail Produk 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>pashmina yang cocok banget dipakai untuk aktivitasmu sehari-hari adalah pashmina kaos. Bahannya juga nyaman dan menyerap keringat!</p><br>
+                    <p>harga: Rp 15.000,00</p>
+                </div>
+            <div class="modal.footer bawah">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to cart</button>
+            </div>
+            </div>
         </div>
     </div>
-    
-    <!-- Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Image Preview</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detail Produk 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Buat yang outfit lebarannya warna putih atau yang polosan aja, bisa memilih hijab bermotif yang senada. Hijab bermotif dijamin bikin tampilan kita enggak monoton dan makin modis!</p><br>
+                    <p>harga: Rp 15.000,00</p>
+                </div>
+            <div class="modal.footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to cart</button>
             </div>
-            <div class="modal-body">
-                <img src="" id="modalImage" class="img-fluid" alt="Preview">
             </div>
         </div>
+    </div>
+    <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detail Produk 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Item fashion muslim dengan bahan crinkle juga lagi digemari belakangan ini. Termasuk hijab, nih! Hijab bahan crinkle bisa kita pakai buat lebaran. Tinggal disesuaikan aja warnanya dengan outfit yang pengin dikenakan, ya!</p><br>
+                    <p>harga: Rp 15.000,00</p>
+                </div>
+            <div class="modal.footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add to cart</button>
+            </div>
+            </div>
         </div>
     </div>
 
@@ -942,7 +873,7 @@
                 <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="1500">
                     <div class="testimoni-card text-center">
                         <img src="assets/HibinoKafka.jpg" alt="Customer 1" class="img-fluid mb-3">
-                        <h5>Hibino Kafka</h5>
+                        <h5 class="fw-bold">Hibino Kafka</h5>
                         <h6 style="border-bottom:2px solid #000;">pelanggan pertama</h6>
                         <p class="mt-1 fw-bold">Produk yang sangat bagus! Saya sangat puas dengan kualitas hijab yang saya
                             beli. Pengirimannya juga cepat. Pacar saya suka banget, sampai ia pakai buat mengalahkan
@@ -952,7 +883,7 @@
                 <div class="col-md-4" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="testimoni-card text-center">
                         <img src="assets/Sopo.jpg" alt="Customer 2" class="img-fluid mb-3">
-                        <h5>Sopo</h5>
+                        <h5 class="fw-bold">Sopo</h5>
                         <h6 style="border-bottom:2px solid #000;">Pedagang</h6>
                         <p class="mt-1 fw-bold">Pelayanan yang sangat ramah dan profesional. Hijabnya sangat nyaman dipakai
                             dan memiliki desain yang cantik. Dek Li Mei suka, katanya "Nyaman banget bang Sopo,
@@ -961,8 +892,8 @@
                 </div>
                 <div class="col-md-4" data-aos="fade-up-left" data-aos-duration="1500">
                     <div class="testimoni-card text-center">
-                        <img src="assets/ElonMusk.jpg" alt="Customer 3" class="img-fluid mb-3">
-                        <h5>Elon Musk</h5>
+                        <img src="assets/yilongma.jpg" alt="Customer 3" class="img-fluid mb-3">
+                        <h5 class="fw-bold">Yi Long Ma</h5>
                         <h6 style="border-bottom:2px solid #000;">Pengusaha</h6>
                         <p class="mt-1 fw-bold">Saya sangat merekomendasikan Mustika Hijab! Harganya terjangkau dan
                             kualitasnya luar biasa, alhamdulillah istri saya suka. Saya disuruh buat kayak gini sama
@@ -1077,6 +1008,8 @@
                                         <div class="bg-white border rounded shadow-sm overflow-hidden">
                                             <form action="#!">
                                                 <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                                    <h1>Pertanyaan anda</h1>
+                                                    <h6>Jika ada hal yang ingin ditanyakan silahkan isi form dibawah berikut</h6>
                                                     <div class="col-12">
                                                         <label for="fullname" class="form-label fw-bold">Full Name 
                                                             <span class="text-danger">*</span>

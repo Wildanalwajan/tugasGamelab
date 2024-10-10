@@ -7,10 +7,53 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
     <style>
+        body {
+            background-image: linear-gradient(to right, #080e3e, #22206b);
+        }
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        .container {
+        margin-top: auto;
+        }
+
+        /* navbar */
+        .navbar-brand {
+            font-weight: bold;
+            background-image: linear-gradient(to right, red, blue);
+            background-clip: text;
+            color: transparent;
+            font-size: 1.5rem;
+        }
+        .navbar-brand:hover {
+            font-weight: bold;
+            background-image: linear-gradient(126deg, red, blue, white );
+            background-clip: text;
+            color: transparent;
+            font-size: 1.5rem;
+        }
+        .nav-item .nav-link {
+            background-image: linear-gradient(to top, white, rgb(151, 151, 151));
+            background-clip: text; 
+            color: transparent;
+        }
+        .nav-item .nav-link:hover {
+            background-image: linear-gradient(25deg, white, blue);
+            background-clip: text;
+            color: transparent;
+        }
+        .nav-item .nav-link.active {
+            background-image: linear-gradient(to bottom, white, blue);
+            background-clip: text;
+            color: transparent;
+            background-color: transparent;
+            border-bottom: 2px solid #F8EDE3;
+        }
         .carousel {
             height: 80%;
             width: 80%;
-            left: 40%;
+            justify-content: center;
+            align-items: center;
         }
         .carousel-item img {
             width: 300px;
@@ -18,11 +61,19 @@
             border-radius: 60px;
             border: 2px solid #f8f9fa;
         }
+        .left {
+            background-color: aqua;
+        }
+        .card img{
+            height: 250px;
+            width: 50%;
+        }
     </style>
 </head>
 <body>
     <div data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="10" class="scrollspy-example" tabindex="0">
 
+        <!-- navbar -->
         <nav class="navbar navbar-expand-lg fixed-top" id="navbar-example">
             <div class="container border-bottom">
                 <a href="#" class="navbar-brand">Mustika Hijab</a>
@@ -48,29 +99,200 @@
                 </div>
             </div>
         </nav>
-        <div id="home" class="content-section carol">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
+
+        <!-- carousel -->
+        <div id="home" class="content-section">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators mb-1">
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="assets/hijab(2).jpg" class="d-block justify-content-center align-items-center alt="fotocarousel">
+                        <img src="assets/hijab(2).jpg" class="d-block w-100" style="width: 12rem;" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/hijab(3).jpg" class="d-block justify-content-center align-items-center alt="fotocarousel">
+                        <img src="assets/hijab(3).jpg" class="d-block w-100" style="width: 12rem;" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/hijab(1).jpg" class="d-block justify-content-center align-items-center alt="fotocarousel">
+                        <img src="assets/hijab(1).jpg" class="d-block w-100" style="width: 12rem;" alt="...">
                     </div>
                 </div>
+            </div>
+        </div>
+        
+        <!-- product -->
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center text-center">
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#productModal1">
+                        <img src="assets/hijab.jpg" class="card-img-top" alt="Produk 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Produk 1</h5>
+                            <p class="card-text">Pashmina Kaos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#productModal2">
+                        <img src="assets/hijab(1).jpg" class="card-img-top" alt="Produk 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Produk 2</h5>
+                            <p class="card-text">Pashmina bahan crinkle</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#productModal3">
+                        <img src="assets/hijab(2).jpg" class="card-img-top" alt="Produk 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Produk 3</h5>
+                            <p class="card-text">Hijab segi empat motif</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Detail Produk 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                <div class="modal.footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add to cart</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Detail Produk 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                <div class="modal.footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add to cart</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Detail Produk 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                <div class="modal.footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add to cart</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <!-- testimoni -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 justify-content-center align-items-center text-center">
+                    <div class="card">
+                        <img src="assets/yilongma.jpg" class="card-img card-img-top" alt="User 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Yi Long Ma</h5>
+                            <p class="card-text">Saya sangat merekomendasikan Mustika Hijab! Harganya terjangkau dan kualitasnya luar biasa, alhamdulillah istri saya suka. Saya disuruh buat kayak gini sama istri saya, daripada buat starlink</p> 
+                            <p class="card-text"><small class="text-muted">CEO, Company X</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 justify-content-center align-items-center text-center">
+                    <div class="card">
+                        <img src="assets/Sopo.jpg" class="card-img card-img-top" alt="User 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sopo</h5>
+                            <p class="card-text">Pelayanan yang sangat ramah dan profesional. Hijabnya sangat nyaman dipakai dan memiliki desain yang cantik. Dek Li Mei suka, katanya "Nyaman banget bang Sopo, makasih ya" gitu bilangnya bos, terbaik deh kalo buat hadiah</p> 
+                            <p class="card-text"><small class="text-muted">CEO, Company X</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 justify-content-center align-items-center text-center">
+                    <div class="card">
+                        <img src="assets/HibinoKafka.jpg" class="card-img card-img-top" alt="User 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Hibino Kafka</h5>
+                            <p class="card-text">Produk yang sangat bagus! Saya sangat puas dengan kualitas hijab yang saya beli. Pengirimannya juga cepat. Pacar saya suka banget, sampai ia pakai buat mengalahkan kaiju.</p> 
+                            <p class="card-text"><small class="text-muted">CEO, Company X</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- footer -->
+        <div class="mt-4 footerdiv" data-aos="fade-up">
+            <div class="container mt-4">
+                <footer class="footer">
+                    <div class="container">
+                        <div class="isifooter row justify-content-center">
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 class="text-uppercase">QuickStart</h5>
+                                <p>
+                                    Kalipancur, Ngaliyan, Semarang City,<br>
+                                    Central Java 50183<br>
+                                    <a href="" style="text-decoration: none; color: #ffffff"><strong>Phone:</strong>
+                                        +6288215670560<br></a>
+                                </p>
+                                <div class="social-links">
+                                    <a href="#"><i class="bi bi-twitter"></i></a>
+                                    <a href="#"><i class="bi bi-facebook"></i></a>
+                                    <a href="https://www.instagram.com/mustikahijab.21" target="_blank"><i
+                                            class="bi bi-instagram"></i></a>
+                                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color: #ffffff;">
+                                <h5 class="text-uppercase">Useful Links</h5>
+                                <ul class="list-unstyled">
+                                    <li style="text-decoration: none;"><a href="#home" style="color: #ffffff;">Home</a></li>
+                                    <li style="text-decoration: none;"><a href="#about" style="color: #ffffff;">About us</a></li>
+                                    <li style="text-decoration: none;"><a href="#menu" style="color: #ffffff;">Menu</a></li>
+                                    <li style="text-decoration: none;"><a href="#pertanyaan" style="color: #ffffff;">Pertanyaan</a></li>
+                                    <li style="text-decoration: none;"><a href="#kritik" style="color: #ffffff;">Kesan&Pesan</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 class="text-uppercase">Our Newsletter</h5>
+                                <p>Subscribe to our newsletter and receive the latest news about our products and services!
+                                </p>
+                                <form action="" method="post">
+                                    <div class="input-group mb-3">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                        <button class="btn btnacc" type="submit">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        aos.init({once: true });
+    </script>
 </body>
 </html>
