@@ -193,6 +193,9 @@
             font-size: 50%vh;
             margin: 10%px, 0;
         }
+        .modal-body {
+            border-bottom: 1px solid black;
+        }
 
         /* produk end*/
 
@@ -777,7 +780,7 @@
     </div>
 
     <!-- product -->
-    <div class="container produk">
+    <div class="container produk" id="product" data-aos="fade-in">
         <div class="row isip">
             <h1 class="justify-content-center align-items-center text-center">Produk</h1>
             <div class="col-md-4">
@@ -809,7 +812,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal" id="productModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -820,14 +823,14 @@
                     <p>pashmina yang cocok banget dipakai untuk aktivitasmu sehari-hari adalah pashmina kaos. Bahannya juga nyaman dan menyerap keringat!</p><br>
                     <p>harga: Rp 15.000,00</p>
                 </div>
-            <div class="modal.footer bawah">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <div class="modal.footer mt-3">
+                <button type="button" class="btn btn-secondary me-3 ms-4" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Add to cart</button>
             </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal" id="productModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -838,14 +841,14 @@
                     <p>Buat yang outfit lebarannya warna putih atau yang polosan aja, bisa memilih hijab bermotif yang senada. Hijab bermotif dijamin bikin tampilan kita enggak monoton dan makin modis!</p><br>
                     <p>harga: Rp 15.000,00</p>
                 </div>
-            <div class="modal.footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <div class="modal.footer mt-3">
+                <button type="button" class="btn btn-secondary me-3 ms-4" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Add to cart</button>
             </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal" id="productModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -856,8 +859,8 @@
                     <p>Item fashion muslim dengan bahan crinkle juga lagi digemari belakangan ini. Termasuk hijab, nih! Hijab bahan crinkle bisa kita pakai buat lebaran. Tinggal disesuaikan aja warnanya dengan outfit yang pengin dikenakan, ya!</p><br>
                     <p>harga: Rp 15.000,00</p>
                 </div>
-            <div class="modal.footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <div class="modal.footer mt-3">
+                <button type="button" class="btn btn-secondary me-3 ms-4" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Add to cart</button>
             </div>
             </div>
@@ -1081,53 +1084,53 @@
 
     <!-- footer -->
 
-<div class="mt-4 footerdiv" data-aos="fade-up">
-    <div class="container mt-4">
-        <footer class="footer">
-            <div class="container">
-                <div class="isifooter row justify-content-center">
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">QuickStart</h5>
-                        <p>
-                            Kalipancur, Ngaliyan, Semarang City,<br>
-                            Central Java 50183<br>
-                            <a href="" style="text-decoration: none; color: #ffffff"><strong>Phone:</strong>
-                                +6288215670560<br></a>
-                        </p>
-                        <div class="social-links">
-                            <a href="#"><i class="bi bi-twitter"></i></a>
-                            <a href="#"><i class="bi bi-facebook"></i></a>
-                            <a href="https://www.instagram.com/mustikahijab.21" target="_blank"><i
-                                    class="bi bi-instagram"></i></a>
-                            <a href="#"><i class="bi bi-linkedin"></i></a>
+    <div class="mt-4 footerdiv" data-aos="fade-up">
+        <div class="container mt-4">
+            <footer class="footer">
+                <div class="container">
+                    <div class="isifooter row justify-content-center">
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">QuickStart</h5>
+                            <p>
+                                Kalipancur, Ngaliyan, Semarang City,<br>
+                                Central Java 50183<br>
+                                <a href="" style="text-decoration: none; color: #ffffff"><strong>Phone:</strong>
+                                    +6288215670560<br></a>
+                            </p>
+                            <div class="social-links">
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com/mustikahijab.21" target="_blank"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color: #ffffff;">
+                            <h5 class="text-uppercase">Useful Links</h5>
+                            <ul class="list-unstyled">
+                                <li style="text-decoration: none;"><a href="#home" style="color: #ffffff;">Home</a></li>
+                                <li style="text-decoration: none;"><a href="#about" style="color: #ffffff;">About us</a></li>
+                                <li style="text-decoration: none;"><a href="#menu" style="color: #ffffff;">Menu</a></li>
+                                <li style="text-decoration: none;"><a href="#pertanyaan" style="color: #ffffff;">Pertanyaan</a></li>
+                                <li style="text-decoration: none;"><a href="#kritik" style="color: #ffffff;">Kesan&Pesan</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Our Newsletter</h5>
+                            <p>Subscribe to our newsletter and receive the latest news about our products and services!
+                            </p>
+                            <form action="" method="post">
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control" placeholder="Email Address">
+                                    <button class="btn btnacc" type="submit">Subscribe</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="color: #ffffff;">
-                        <h5 class="text-uppercase">Useful Links</h5>
-                        <ul class="list-unstyled">
-                            <li style="text-decoration: none;"><a href="#home" style="color: #ffffff;">Home</a></li>
-                            <li style="text-decoration: none;"><a href="#about" style="color: #ffffff;">About us</a></li>
-                            <li style="text-decoration: none;"><a href="#menu" style="color: #ffffff;">Menu</a></li>
-                            <li style="text-decoration: none;"><a href="#pertanyaan" style="color: #ffffff;">Pertanyaan</a></li>
-                            <li style="text-decoration: none;"><a href="#kritik" style="color: #ffffff;">Kesan&Pesan</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5 class="text-uppercase">Our Newsletter</h5>
-                        <p>Subscribe to our newsletter and receive the latest news about our products and services!
-                        </p>
-                        <form action="" method="post">
-                            <div class="input-group mb-3">
-                                <input type="email" class="form-control" placeholder="Email Address">
-                                <button class="btn btnacc" type="submit">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
     </div>
-</div>
 
     <!-- JavaScript -->
 
